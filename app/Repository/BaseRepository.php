@@ -54,6 +54,7 @@ class BaseRepository
 
     /**
      * @param integer $id
+     *
      * @return Model|null
      */
     public function find($id)
@@ -68,6 +69,7 @@ class BaseRepository
 
     /**
      * @param integer $id
+     *
      * @return Model
      * @throws ModelNotFoundException
      */
@@ -78,6 +80,7 @@ class BaseRepository
 
     /**
      * @param string $slug
+     *
      * @return Model
      * @throws ModelNotFoundException
      */
@@ -98,6 +101,7 @@ class BaseRepository
 
     /**
      * @param array $attributes
+     *
      * @return Model
      */
     public function instance(array $attributes = [])
@@ -108,6 +112,7 @@ class BaseRepository
 
     /**
      * @param int|null $perPage
+     *
      * @return mixed
      */
     public function paginate($perPage = null)
@@ -122,9 +127,10 @@ class BaseRepository
 
     /**
      * @param array $data
-     * @param null $rules
+     * @param null  $rules
      * @param array $messages
      * @param array $customAttributes
+     *
      * @return \Illuminate\Validation\Validator
      */
     public function validator(array $data = [], $rules = null, array $messages = [], array $customAttributes = [])
@@ -138,9 +144,10 @@ class BaseRepository
 
     /**
      * @param array $data
-     * @param null $rules
+     * @param null  $rules
      * @param array $messages
      * @param array $customAttributes
+     *
      * @return bool
      * @throws ValidationException
      */
@@ -152,6 +159,7 @@ class BaseRepository
 
     /**
      * @param array $data
+     *
      * @return Model
      */
     public function create(array $data = [])
@@ -161,7 +169,8 @@ class BaseRepository
 
     /**
      * @param integer $id
-     * @param array $data
+     * @param array   $data
+     *
      * @return Model
      */
     public function update($id, array $data = [])
@@ -173,6 +182,7 @@ class BaseRepository
 
     /**
      * @param integer $id
+     *
      * @return Model
      * @throws \Exception
      */
@@ -185,6 +195,7 @@ class BaseRepository
 
     /**
      * @param \Illuminate\Validation\Validator $validator
+     *
      * @return bool
      * @throws ValidationException
      */
