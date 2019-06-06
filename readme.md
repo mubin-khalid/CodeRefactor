@@ -1,5 +1,5 @@
 ### Code Refactor
-== 
+***
  - Validation must be applied to any function that is passing data to other function, specially in case of database 
  queries.
  
@@ -49,6 +49,6 @@
  `headers`.
  
 
- 
+ ---
  - `_app` contains old code, while `app` contains refactored code.
  
